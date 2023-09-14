@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-
+const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 inquirer
   .prompt([
@@ -36,7 +36,7 @@ inquirer
       type: "input",
       name: "credits",
       message:
-        "Please list other collaborators that helped you in this project with links to there github profile! Also any third-party assets that require attribution. Finally any tutorials please include the link to them as well.", //put these in a list
+        "Please list other collaborators that helped you in this project with links to there github profile! Also any third-party assets that require attribution. Finally any tutorials please include the link to them as well.",
     },
     {
       type: "input",
@@ -62,13 +62,13 @@ inquirer
   ])
   .then((data) => {
     console.log(data);
-    const myREADME = createREADME(data);
-    fs.writeFileSync("./README.md", myREADME);
+    const myREADME = generateMarkdown(data);
+    fs.writeFileSync("./output/README.md", myREADME);
   });
 
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
-function createREADME({
+function generateMarkdown({
   projectTitle,
   description,
   tableOfContents,
@@ -80,16 +80,11 @@ function createREADME({
   contribution,
   tests,
 }) {
-  return `<!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-      <title>ReadME-Generator</title>
-    </head>
-    <body>
-      <header>${projectTitle}</header>
+  return `
+      <##>${projectTitle}
+
+      # ${projectTitle}
+
       <section>${description}</section>
       <section>${tableOfContents}</section>
       <section>${installation}</section>
@@ -99,10 +94,7 @@ function createREADME({
       <section>${features}</section>
       <section>${contribution}</section>
       <section>${tests}</section>
-  
-      <script src="./index.js"></script>
-    </body>
-  </html>`;
+  `;
 }
 
 // // TODO: Create a function to initialize app
