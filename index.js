@@ -16,10 +16,11 @@ inquirer
       message: "Please give me a description about your project!",
     },
     {
-      type: "input",
-      name: "tableOfContents",
+      type: "list",
+      name: "license",
       message:
-        "If your READ.me is large enough please give me some items I can arrange into a table of contents!", //will need to arrange this into a list, possibly with buttons linking them to where they are on the readme
+        "If your READ.me is large enough please give me some items I can arrange into a table of contents!",
+      choices: ["MIT", "BSD", "GNU"],
     },
     {
       type: "input",
@@ -37,11 +38,6 @@ inquirer
       name: "credits",
       message:
         "Please list other collaborators that helped you in this project with links to there github profile! Also any third-party assets that require attribution. Finally any tutorials please include the link to them as well.",
-    },
-    {
-      type: "input",
-      name: "badges",
-      message: "Please present any badges as well.",
     },
     {
       type: "input",
@@ -68,34 +64,6 @@ inquirer
 
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
-function generateMarkdown({
-  projectTitle,
-  description,
-  tableOfContents,
-  installation,
-  usage,
-  credits,
-  badges,
-  features,
-  contribution,
-  tests,
-}) {
-  return `
-      <##>${projectTitle}
-
-      # ${projectTitle}
-
-      <section>${description}</section>
-      <section>${tableOfContents}</section>
-      <section>${installation}</section>
-      <section>${usage}</section>
-      <section>${credits}</section>
-      <section>${badges}</section>
-      <section>${features}</section>
-      <section>${contribution}</section>
-      <section>${tests}</section>
-  `;
-}
 
 // // TODO: Create a function to initialize app
 // function init() {}

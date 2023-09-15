@@ -30,7 +30,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === "MIT") {
-    return "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.";
+    return "The MIT license is a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.";
   } else if (license === "BSD") {
     return "BSD licenses are a low restriction type of license for open source software that does not put requirements on redistribution. As a low restriction and requirement license type, Berkeley Source Distribution (BSD) licenses are used for the distribution of many freeware, shareware and open source software";
   } else if (license === "GNU") {
@@ -44,6 +44,7 @@ function renderLicenseSection(license) {
 function generateMarkdown({
   projectTitle,
   description,
+  license,
   installation,
   usage,
   credits,
@@ -53,16 +54,27 @@ function generateMarkdown({
   tests,
 }) {
   return `
-      # ${projectTitle}
-      ## ${description}
-      ## ${renderLicenseBadge(license)}
-      ## ${installation}
-      ## ${usage}
-      ## ${credits}
-      ## ${badges}
-      ## ${features}
-      ## ${contribution}
-      ## ${tests}
+#  ${"1. Title"}
+## ${projectTitle}
+# ${"2. description"}
+## ${description}
+# ${"3. Badges Used"}
+## ${renderLicenseBadge(license)}
+# ${"4. installation"}
+### ${installation}
+# ${"5. usage"}
+### ${usage}
+# ${"6. credits"}
+### ${credits}
+# ${"7. License Info"}
+### ${renderLicenseSection(license)}
+### ${renderLicenseLink(license)}
+# ${"8. features"}
+### ${features}
+# ${"9. contribution"}
+### ${contribution}
+# ${"10. tests"}
+### ${tests}
   `;
 }
 
