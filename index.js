@@ -62,9 +62,6 @@ inquirer
     fs.writeFileSync("./output/README.md", myREADME);
   });
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
 // // TODO: Create a function to initialize app
 // function init() {}
 

@@ -48,7 +48,6 @@ function generateMarkdown({
   installation,
   usage,
   credits,
-  badges,
   features,
   contribution,
   tests,
