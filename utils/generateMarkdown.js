@@ -46,39 +46,38 @@ function generateMarkdown({
   email,
 }) {
   return `
-#  ${"1. Title"}
-## ${projectTitle}
-# ${"2. Description"}
-## ${description}
-# ${"3. Badges Used"}
-## ${renderLicenseBadge(license)}
-# ${"4. Table of contents"}
-[Installation](#instillation)
-[Usage](#usage)
-[Credits](#credits)
-[License info](#license)
-[Features](#features)
-[Contribution](#contribution)
-[Tests](#tests)
-[Questions](#questions)
-# ${"5. Installation"}
-## ${installation}
-# ${"6. Usage"}
-## ${usage}
-# ${"7. Credits"}
-## ${credits}
-# ${"8. License Info"}
-## ${renderLicenseSection(license)}
-## ${renderLicenseLink(license)}
-# ${"9. Features"}
-## ${features}
-# ${"10. Contribution"}
-## ${contribution}
-# ${"11. Tests"}
-## ${tests}
-# ${"12. Questions"}
-##[Github]${"https://github.com/" + github}
-##Please email me here for further questions. ${email}
+# ${projectTitle}
+## 2. Description
+ ${description}
+## 3. Badges Used
+ ${renderLicenseBadge(license)}
+## 4. Table of contents
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [Credits](#credits)
+ - [License info](#license)
+ - [Features](#features)
+ - [Contribution](#contribution)
+ - [Tests](#tests)
+ - [Questions](#questions)
+## 5. Installation
+ ${installation}
+## 6. Usage
+ ${usage}
+## 7. Credits
+ ${credits}
+## 8. License Info
+ ${renderLicenseSection(license)}
+ ${renderLicenseLink(license)}
+## 9. Features
+ ${features}
+## 10. Contribution
+ ${contribution}
+## 11. Tests
+ ${tests}
+## 12. Questions
+[Github]${"https://github.com/" + github}
+Please email me here for further questions. ${email}
   `;
 }
 
