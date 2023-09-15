@@ -54,6 +54,18 @@ inquirer
       message:
         "Finally, how can we test this application to make sure everything runs smoothly?",
     },
+    {
+      type: "input",
+      name: "github",
+      message:
+        "What is your github username?",
+    },
+    {
+      type: "input",
+      name: "email",
+      message:
+        "What is your email?",
+    },
   ])
   .then((data) => {
     console.log(data);

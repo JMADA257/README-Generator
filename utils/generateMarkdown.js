@@ -1,4 +1,3 @@
-
 function renderLicenseBadge(license) {
   if (license === "MIT") {
     return "![Static Badge](https://img.shields.io/badge/MIT_License-blue)";
@@ -43,6 +42,8 @@ function generateMarkdown({
   features,
   contribution,
   tests,
+  github,
+  email,
 }) {
   return `
 #  ${"1. Title"}
@@ -52,13 +53,14 @@ function generateMarkdown({
 # ${"3. Badges Used"}
 ## ${renderLicenseBadge(license)}
 # ${"4. Table of contents"}
-### ${"--Installation"}
-### ${"--Usage"}
-### ${"--Credits"}
-### ${"--License info"}
-### ${"--Features"}
-### ${"--Contribution"}
-### ${"--Tests"}
+[Installation](#instillation)
+[Usage](#usage)
+[Credits](#credits)
+[License info](#license)
+[Features](#features)
+[Contribution](#contribution)
+[Tests](#tests)
+[Questions](#questions)
 # ${"5. Installation"}
 ## ${installation}
 # ${"6. Usage"}
@@ -74,6 +76,9 @@ function generateMarkdown({
 ## ${contribution}
 # ${"11. Tests"}
 ## ${tests}
+# ${"12. Questions"}
+##[Github]${"https://github.com/" + github}
+##Please email me here for further questions. ${email}
   `;
 }
 
