@@ -1,23 +1,31 @@
 
 #  1. Title
-## my readme gen
-# 2. description
-## it reads stuff
+## jro
+# 2. Description
+## das
 # 3. Badges Used
-## ![Static Badge](https://img.shields.io/badge/GNU_License-grey)
-# 4. installation
-### node
-# 5. usage
-### idk
-# 6. credits
-### me
-# 7. License Info
-### The GNU General Public License (GNU, GPL, or GPL) is a free software license originally written by Richard Stallman of the Free Software Foundation, which guarantees that users are free to use, share, and modify the software without paying anyone for it.
-### [GNU LINK](https://www.gnu.org/licenses/gpl-3.0.en.html)
-# 8. features
-### nothing
-# 9. contribution
-### cash
-# 10. tests
-### idk
+## ![Static Badge](https://img.shields.io/badge/No_License_Chosen-red)
+# 4. Table of contents
+### --Installation
+### --Usage
+### --Credits
+### --License info
+### --Features
+### --Contribution
+### --Tests
+# 5. Installation
+## saddasdsa
+# 6. Usage
+## asdasdasd
+# 7. Credits
+## sdasdaasdadsasd
+# 8. License Info
+## You did not choose a license for this project!
+## 
+# 9. Features
+## sdadsargftrge
+# 10. Contribution
+## gfdvc
+# 11. Tests
+## cvrredfgreg
   

@@ -1,8 +1,7 @@
-// TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
-// TODO: Create an array of questions for user input
+
 inquirer
   .prompt([
     {
@@ -20,7 +19,7 @@ inquirer
       name: "license",
       message:
         "If your READ.me is large enough please give me some items I can arrange into a table of contents!",
-      choices: ["MIT", "BSD", "GNU"],
+      choices: ["MIT", "BSD", "GNU", "None"],
     },
     {
       type: "input",
@@ -31,7 +30,7 @@ inquirer
     {
       type: "input",
       name: "usage",
-      message: "What are the uses of this project?", // maybe put these into a list?
+      message: "What are the uses of this project?",
     },
     {
       type: "input",
@@ -42,7 +41,7 @@ inquirer
     {
       type: "input",
       name: "features",
-      message: "Now list the features this project has!", //another list for this?
+      message: "Now list the features this project has!",
     },
     {
       type: "input",
@@ -62,8 +61,8 @@ inquirer
     fs.writeFileSync("./output/README.md", myREADME);
   });
 
-// // TODO: Create a function to initialize app
-// function init() {}
+// TODO: Create a function to initialize app
+function init() {}
 
-// // Function call to initialize app
-// init();
+// Function call to initialize app
+init();

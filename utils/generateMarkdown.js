@@ -1,7 +1,4 @@
-//will call these inside of the generate markdown.
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
     return "![Static Badge](https://img.shields.io/badge/MIT_License-blue)";
@@ -14,20 +11,16 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === "MIT") {
     return "[MIT LINK](https://opensource.org/license/mit/)";
   } else if (license === "BSD") {
     return "[BSD LINK](https://opensource.org/license/bsd-3-clause/)";
-  } else {
+  } else if (license === "GNU") {
     return "[GNU LINK](https://www.gnu.org/licenses/gpl-3.0.en.html)";
-  }
+  } else return "";
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === "MIT") {
     return "The MIT license is a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.";
@@ -40,7 +33,6 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown({
   projectTitle,
   description,
@@ -55,25 +47,33 @@ function generateMarkdown({
   return `
 #  ${"1. Title"}
 ## ${projectTitle}
-# ${"2. description"}
+# ${"2. Description"}
 ## ${description}
 # ${"3. Badges Used"}
 ## ${renderLicenseBadge(license)}
-# ${"4. installation"}
-### ${installation}
-# ${"5. usage"}
-### ${usage}
-# ${"6. credits"}
-### ${credits}
-# ${"7. License Info"}
-### ${renderLicenseSection(license)}
-### ${renderLicenseLink(license)}
-# ${"8. features"}
-### ${features}
-# ${"9. contribution"}
-### ${contribution}
-# ${"10. tests"}
-### ${tests}
+# ${"4. Table of contents"}
+### ${"--Installation"}
+### ${"--Usage"}
+### ${"--Credits"}
+### ${"--License info"}
+### ${"--Features"}
+### ${"--Contribution"}
+### ${"--Tests"}
+# ${"5. Installation"}
+## ${installation}
+# ${"6. Usage"}
+## ${usage}
+# ${"7. Credits"}
+## ${credits}
+# ${"8. License Info"}
+## ${renderLicenseSection(license)}
+## ${renderLicenseLink(license)}
+# ${"9. Features"}
+## ${features}
+# ${"10. Contribution"}
+## ${contribution}
+# ${"11. Tests"}
+## ${tests}
   `;
 }
 
