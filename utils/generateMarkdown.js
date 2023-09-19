@@ -47,35 +47,35 @@ function generateMarkdown({
 }) {
   return `
 # ${projectTitle}
-## 2. Description
+## Description
  ${description}
-## 3. Badges Used
+## Badges Used
  ${renderLicenseBadge(license)}
-## 4. Table of contents
+## Table of contents
  - [Installation](#installation)
  - [Usage](#usage)
  - [Credits](#credits)
- - [License info](#license)
+ - [License info](#license-info)
  - [Features](#features)
  - [Contribution](#contribution)
  - [Tests](#tests)
  - [Questions](#questions)
-## 5. Installation
+## Installation
  ${installation}
-## 6. Usage
+## Usage
  ${usage}
-## 7. Credits
+## Credits
  ${credits}
-## 8. License Info
+## License Info
  ${renderLicenseSection(license)}
  ${renderLicenseLink(license)}
-## 9. Features
+## Features
  ${features}
-## 10. Contribution
+## Contribution
  ${contribution}
-## 11. Tests
+## Tests
  ${tests}
-## 12. Questions
+## Questions
 [Github]${"https://github.com/" + github}
 Please email me here for further questions. ${email}
   `;
