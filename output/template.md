@@ -44,3 +44,8 @@ Positive feedback
 ## Tests
 
 Try it out yourself!
+
+## Links!
+
+[Github Link](https://github.com/JMADA257/README-Generator)
+[Video](https://drive.google.com/file/d/1KKZEFF6hShSA1y_sYGrTri5cwggi6cSl/view)
