@@ -6,11 +6,8 @@
 ## Description
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+My motivation for this project was to create a way I could generate readme's without having to do them myself! I built this project to help me build README's which sometimes can be a painful last task to do! This did exactly that for me! I learned more about require OOP and the fact that I can use functions and classes from other JS pages!
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
 
 ## Table of Contents (Optional)
 

@@ -11,7 +11,7 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Please give me a description about your project!",
+    message: "Please give me a description about your project! Some questions helpful for this are, What was your motivation? Why did you build this project? What problem does it solve? What did you learn? ",
   },
   {
     type: "list",
