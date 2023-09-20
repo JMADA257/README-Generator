@@ -76,6 +76,3 @@ function init() {
 init();
 
 
-
-//video 
-//github repo

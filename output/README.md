@@ -1,7 +1,7 @@
 
-#  aoishfd sadfad 
+# Jordans Readme Gen
 ## Description
- \dfs adfs dasf
+ To generate README's quickly. 
 ## Badges Used
  ![Static Badge](https://img.shields.io/badge/MIT_License-blue)
 ## Table of contents
@@ -14,21 +14,21 @@
  - [Tests](#tests)
  - [Questions](#questions)
 ## Installation
- df sasdf 
+ Node and Inquierer
 ## Usage
- fad s
+ Generate README's for the user
 ## Credits
- dsa f
+ Myself
 ## License Info
  The MIT license is a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
  [MIT LINK](https://opensource.org/license/mit/)
 ## Features
- dasf dsaf 
+ It has generating ability for README's
 ## Contribution
- adsf
+ positive feedback
 ## Tests
- adsf
+ Run it in vscode
 ## Questions
-[Github]https://github.com/afd
-Please email me here for further questions. asdf
+[Github]https://github.com/JMADA257
+Please email me here for further questions. Jadams1812@hotmail.com
   
