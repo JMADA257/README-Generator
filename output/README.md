@@ -1,9 +1,9 @@
 
-# Jordans Readme Gen
+# SVG-Logo-Gen
 ## Description
- To generate README's quickly. 
+ My motivation for this project was to automatically generate SVG logo's it helps solve that issue by asking the user to input a couple lines of code. I learned more about classes and how to properly export and require them from different pages!
 ## Badges Used
- ![Static Badge](https://img.shields.io/badge/MIT_License-blue)
+ ![Static Badge](https://img.shields.io/badge/No_License_Chosen-red)
 ## Table of contents
  - [Installation](#installation)
  - [Usage](#usage)
@@ -14,22 +14,21 @@
  - [Tests](#tests)
  - [Questions](#questions)
 ## Installation
- Node and Inquierer
+ Inquirer and Jest
 ## Usage
- Generate README's for the user
+ Its to help people automatically generate SVG's so they dont have to themselves!
 ## Credits
- Myself
+ Myself!
 ## License Info
- The MIT license is a short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
- [MIT LINK](https://opensource.org/license/mit/)
+ You did not choose a license for this project!
+ 
 ## Features
- It has generating ability for README's
+ A fully working test sytem and automatically generation
 ## Contribution
- positive feedback
+ Cash money or positive feedback
 ## Tests
- Run it in vscode
+ Npm run test 
 ## Questions
 [Github]https://github.com/JMADA257
 Please email me here for further questions. Jadams1812@hotmail.com
-  
   
